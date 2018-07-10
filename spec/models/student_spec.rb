@@ -13,4 +13,7 @@ describe Student, type: :model do
       expect(student_1).to be_valid
     end
   end
+  describe 'relationships' do
+    it {should have_many(:addresses)}
+  end
 end
