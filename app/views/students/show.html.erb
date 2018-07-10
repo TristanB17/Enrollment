@@ -1,5 +1,15 @@
 <h1>Page for <%= @student.name %>, what a cool guy </h1>
 
+<% @student.addresses.each do |address| %>
+  <%  le_count = 0 %>
+  <h3>Address #<%= "#{le_count + 1}" %></h3><br>
+  <p>Description: <%= address.description %> </p><br>
+  <p>Street: <%= address.street %> </p><br>
+  <p>City: <%= address.city %> </p><br>
+  <p>State: <%= address.state %> </p><br>
+  <p>Zip Code: <%= address.zip_code %> </p><br>
+<% end %>
+
 <%= link_to "Edit Student ##{@student.id}", edit_student_path(@student) %><br>
 <%= link_to "Delete Student ##{@student.id}" %><br>
 <%= link_to "Return to Homepage", students_path %><br>
