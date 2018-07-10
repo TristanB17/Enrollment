@@ -1,3 +1,7 @@
 <h1>Edit Student: <%= @student.name %> </h1>
 
 <%= render partial: "form" %>
+
+<br>
+<%= link_to "Return to Homepage", students_path %><br>
+<%= link_to "Create New Student", new_student_path %><br><br>

@@ -1,1 +1,6 @@
 <h1>Page for <%= @student.name %>, what a cool guy </h1>
+
+<%= link_to "Edit Student ##{@student.id}", edit_student_path(@student) %><br>
+<%= link_to "Delete Student ##{@student.id}" %><br>
+<%= link_to "Return to Homepage", students_path %><br>
+<%= link_to "Create New Student", new_student_path %><br>
