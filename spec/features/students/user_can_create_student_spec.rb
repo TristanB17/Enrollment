@@ -8,7 +8,7 @@ describe 'user' do
 
       expect(page).to have_field(:student_name)
       expect(page).to have_content(greeting)
-      expect(page).to have_button("Create Contact")
+      expect(page).to have_button("Create Student")
     end
   end
 end
